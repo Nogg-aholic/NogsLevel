@@ -1,17 +1,25 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
+	"Version": 0,
+	"VersionName": "0.2.1",
+	"SemVersion": "0.2.1",
 	"FriendlyName": "NogsLevel",
-	"Description": "",
-	"Category": "Other",
-	"CreatedBy": "",
-	"CreatedByURL": "",
+	"Description": "A empty custom world great for mod testing, creative building, and challenge playthroughs!",
+	"Category": "Modding",
+	"CreatedBy": "Nog, Robb",
+	"CreatedByURL": "https://ficsit.app/user/DviU5j6i7Qp1wm",
 	"DocsURL": "",
 	"MarketplaceURL": "",
-	"SupportURL": "",
+	"SupportURL": "http://discord.gg/zqp6U7Y7Nu",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": false
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "SML",
+			"Enabled": true,
+			"SemVersion": "^3.3.0"
+		}
+	]
 }
