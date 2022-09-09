@@ -6,7 +6,10 @@ A empty custom world great for mod testing, creative building, and challenge pla
 
 Pick your options for the map, then get started!
 
-This mod also serves as an example or starting point for anyone else that wants to add a custom level to the game. The source code is available ~~[here](https://github.com/Nogg-aholic/NogsLevel)~~ (Contact Robb#6731 for updated source code) and checking it out is encouraged.
+This mod also serves as an example or starting point for anyone else that wants to add a custom level to the game.
+The source code is available [here](https://github.com/Nogg-aholic/NogsLevel) and checking it out is encouraged.
+Be sure to read the [Modder Readme](https://github.com/Nogg-aholic/NogsLevel/blob/master/ModderReadme.md) which explains a few things!
+Contact Robb#6731 with questions.
 
 ### Questions? Suggestions? Join the [Nog's Mods Discord server](https://discord.gg/CPeJJrXpth) or leave an issue on the [GitHub issues page](https://github.com/Nogg-aholic/NogsLevel/issues) (slower response time)
 
@@ -16,7 +19,7 @@ This mod also serves as an example or starting point for anyone else that wants 
 
 ## Overview
 
-Another game world for you to play in that loads *significantly* faster than the base game's world.
+Another game world for you to play in that loads noticeably faster than the base game's world.
 
 The level is great for testing mods or build plans, and it offers the ability to option to start with everything unlocked, and with the No Power and No Build Cost cheats enabled. Even with cheats turned off, the map theoretically has everything you'd need to play a game to completion.
 
@@ -29,8 +32,14 @@ By default the level contains the following:
 
 ## Options
 
+These config options affect every Nogs Level save,
+since they are stored with your copy of the game, not the save file.
+Per-world saves are coming as an SML feature Eventually ™.
+
 - **Node Spawn**
   - With this option enabled, the mod will automatically spawn a resource node for each loaded ore. This automatically works with other mods you have installed (assuming they registered their resources correctly).
+- **Ore Node Copy Count**
+  - How many copies of the ore nodes to spawn
 - **No Ground**
   - Great for Skyblock/Spaceblock/Void World challenges!
   - There is nothing in the world than the starting cube, water, and resource nodes. You'll need to build out foundations to access things.
@@ -42,23 +51,33 @@ By default the level contains the following:
   ![Water World](https://i.imgur.com/GWEh8eY.png)
 - **Custom Day&Night**
   - With this option disabled, there is no day/night cycle in the world - it is always daylight, although there is no visible sun in the sky.
-- **Unlock Schematics**
-  - Automatically gives you every loaded Schematic, MAM Research Tree, AWESOME Shop Purchase, and Alternate Recipe when you enter the map.
+- **Unlock All Schematics**
+  - Automatically gives you every loaded Schematic, MAM Research Tree, AWESOME Shop Purchase, and Alternate Recipe from all mods when you enter the map.
 - **Cheat NoPower**
   - Automatically enables the NoPower cheat, meaning that buildings do not require power to operate (just an electric connection) and vehicles operate without requiring fuel.
 - **Cheat NoCost**
   - Automatically enables the NoCost cheat, meaning that constructing things with the Build Gun does not require having the requisite resources in your inventory.
 - **Skip Tutorial**
-  - Does nearly the same thing as the base game's Skip Tutorial option. This is here so that the map can be automatically launched with the option (for use by other mods down the line)
+  - Does nearly the same thing as the base game's Skip Tutorial option. This is here so that the map can be automatically launched with the option (for use by other mods down the line). BUG - You might have to reload the save for the HUB to be visually complete
+- **Resource Plants**
+  - Spawn plants that regrow common pickable resources on the starting platform
+- **Gas Cloud**
+  - Spawn the gas cloud region (by the body of water) for testing
+- **Max Modded Nodes**
+  - WIP - controls how many mod resource nodes are allowed to spawn
+- **No Vanilla Nodes**
+  - No base game ore nodes will be spawned when this is true
 
 ## Useful for Testing
 
-Since there are fewer things in the world to load, using NogsLevel as your mod testing map will significantly reduce the amount of time you have to wait for the game to launch to test your mod. It may not seem like much, but the time shaved off every reload will add up.
+Since there are fewer things in the world to load, using NogsLevel as your mod testing map will reduce the amount of time you have to wait for the game to launch to test your mod. It may not seem like much, but the time shaved off every reload will add up.
 
 <!-- On my (Robb's) computer, loading directly into NogsLevel takes 16 seconds, and loading into the base game takes 28 seconds. -->
 
 <details>
 <summary> Load Time Comparison Video </summary>
+
+Recorded on Nog's computer
 
 ### Base game - ~7 seconds
 
@@ -94,7 +113,6 @@ where `NogsLevel_autosave_0` is replaced with the name of your save.
 5. Consider setting up the launch script to load autosave_0 as opposed to a specific named save. This means that when your testing world autosaves, the script will always launch you into your 'updated' testing save.
 
 </details>
-
 
 ## Images
 
@@ -135,4 +153,9 @@ The orange block you spawn starting on
 
 - Configure the respawn frequency of the respawning materials
 - Enemy spawn locations
-- Optionally spawn a ladder to help if you fall off of the starting orange cube
+
+## Special Thanks
+
+- Ben for info on the changes made to the level streaming system in U6
+- Archengius for writing the custom FGWorldSettings.cpp class needed to correctly package custom levels
+- D4rkL0rd for info on the postprocess materials needed to get build effects working
