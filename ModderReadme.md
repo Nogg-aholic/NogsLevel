@@ -1,3 +1,7 @@
+# Modder Readme
+
+## As of SML3.5.0, most of this information is no longer relevant as the Starter Project has been adjusted to incorporate these changes.
+
 If you are looking to make a level of your own, this info might help.
 
 ## Compiling This Mod Requires A Source File Change
@@ -27,13 +31,9 @@ This corrupt asset will crash the game when anything tries to load it
 
 ### Get Custom FGWorldSettings.cpp
 
-So - replace your FGWorldSettings.cpp file with this one originally created by Arch from looking at IDA output:
+So - replace your FGWorldSettings.cpp file with this one created by Arch from looking at IDA output:
 
-https://github.com/Nogg-aholic/NogsLevel/blob/master/ArchCustom_FGWorldSettings.cpp
-
-It was formed in [this discussion](https://discord.com/channels/555424930502541343/601030071221878784/1016823734826442812)
-and edited a bit further from there (see comments).
-
+https://discord.com/channels/555424930502541343/601030071221878784/1016823734826442812
 
 and recompile dev editor and shipping.
 

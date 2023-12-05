@@ -1,25 +1,31 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0.0",
-	"SemVersion": "1.0.0",
-	"FriendlyName": "NogsLevel",
+	"VersionName": "1.1.0",
+	"SemVersion": "1.1.0",
+	"FriendlyName": "Nog's Level",
 	"Description": "A empty custom world great for mod testing, creative building, and challenge playthroughs!",
 	"Category": "Modding",
 	"CreatedBy": "Nog, Robb",
-	"CreatedByURL": "https://ficsit.app/user/DviU5j6i7Qp1wm",
-	"DocsURL": "",
+	"CreatedByURL": "",
+	"DocsURL": "https://github.com/Nogg-aholic/NogsLevel",
 	"MarketplaceURL": "",
 	"SupportURL": "http://discord.gg/zqp6U7Y7Nu",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"LocalizationTargets": [
+		{
+			"Name": "NogsLevel",
+			"LoadingPolicy": "Always"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "SML",
-			"Enabled": true,
-			"SemVersion": "^3.3.2"
+			"SemVersion": "^3.6.1",
+			"Enabled": true
 		}
 	]
 }
