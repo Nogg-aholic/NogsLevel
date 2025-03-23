@@ -1,8 +1,8 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.1.1",
-	"SemVersion": "1.1.1",
+	"VersionName": "1.2.0",
+	"SemVersion": "1.2.0",
 	"FriendlyName": "Nog's Level",
 	"Description": "A empty custom world great for mod testing, creative building, and challenge playthroughs!",
 	"Category": "Modding",
@@ -24,8 +24,9 @@
 	"Plugins": [
 		{
 			"Name": "SML",
-			"SemVersion": "^3.6.1",
+			"SemVersion": "^3.10.0",
 			"Enabled": true
 		}
-	]
+	],
+	"GameVersion": ">=383729"
 }
